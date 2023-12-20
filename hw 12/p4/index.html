@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Позиционирование картинки и координат клика</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+      position: relative;
+    }
+
+    #container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #image {
+      position: relative;
+      user-select: none; /* предотвращает выделение текста */
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      pointer-events: none; /* отключает события мыши */
+    }
+
+    #coordinates {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="image" src="https://via.placeholder.com/350" alt="Sample Image">
+  </div>
+  <div id="coordinates"></div>
+
+  <script>
+    const image = document.getElementById('image');
+    const coordinates = document.getElementById('coordinates');
+
+    document.addEventListener('click', (event) => {
+      const x = event.clientX;
+      const y = event.clientY;
+
+      coordinates.innerText = `X: ${x}, Y: ${y}`;
+    });
+
+    function centerImage() {
+      const container = document.getElementById('container');
+      const containerWidth = container.clientWidth;
+      const containerHeight = container.clientHeight;
+
+      const imageWidth = image.width;
+      const imageHeight = image.height;
+
+      const imageLeft = (containerWidth - imageWidth) / 2;
+      const imageTop = (containerHeight - imageHeight) / 2;
+
+      image.style.left = `${imageLeft}px`;
+      image.style.top = `${imageTop}px`;
+    }
+
+    window.addEventListener('resize', centerImage);
+    window.addEventListener('load', centerImage);
+  </script>
+</body>
+</html>

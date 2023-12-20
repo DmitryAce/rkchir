@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Уведомления</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .notification {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showNotification({ content: 'Пример уведомления', duration: 1500 })">
+    Показать уведомление
+  </button>
+
+  <script>
+    function showNotification(options) {
+      const { content, duration } = options;
+      const notification = document.createElement('div');
+      notification.classList.add('notification');
+      notification.textContent = content;
+      document.body.appendChild(notification);
+
+      setTimeout(() => {
+        notification.style.opacity = '1';
+      }, 100);
+
+      setTimeout(() => {
+        notification.style.opacity = '0';
+        setTimeout(() => {
+          document.body.removeChild(notification);
+        }, 300); // Время анимации исчезновения уведомления
+      }, duration);
+    }
+  </script>
+</body>
+</html>

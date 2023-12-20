@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #input {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="buttons">
+        <button id="change">Изменить элемент</button>
+        <button id="clear">Очистить массив</button>
+        <button id="remove">Удалить элемент <svg id="trash-icon" width="20" height="20"></svg></button>
+        <button id="sum">Сумма элементов</button>
+        <button id="sortAsc">Сортировать по возрастанию</button>
+        <button id="sortDesc">Сортировать по убыванию</button>
+        <button id="print">Вывести массив</button>
+    </div>
+    <div id="input">
+        <input type="number" id="newElement" placeholder="Введите число">
+        <button id="add">Добавить элемент</button>
+        <button id="filter">Фильтровать массив</button>
+    </div>
+    <div id="array"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
