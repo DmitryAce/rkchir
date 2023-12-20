@@ -1,0 +1,241 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color:#000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Header */
+
+.header { 
+    padding-top: 46px;
+    padding-bottom: 10px;
+    background-color: #1E1F22;
+}
+
+.header-nav {
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    position: relative;
+    padding:0 12px 3px 10px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color:#F2F3F5;
+}
+
+.header-img {
+
+    display:flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    margin-left: 300px;
+}
+
+.hero {
+    border-radius: 50px;
+}
+
+.logo::after {
+    content: "";
+    scale: 0.7;
+    background-image: url('./math.png'); /* Укажите путь к вашей поверхностной картинке */
+    background-size: cover; /* Растягиваем изображение, чтобы оно покрыло псевдоэлемент полностью */
+    width: 50px; /* Ширина псевдоэлемента */
+    height: 50px; /* Высота псевдоэлемента */
+    position: absolute; /* Устанавливаем позицию как абсолютную */
+    left: -40px; /* Положение справа */
+    top: -8px; /* Положение внизу */
+}
+
+/* Nav */
+
+.nav {
+    margin-right:150px;
+}
+
+.nav-list {
+    list-style: none;
+    display:flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-button {
+    display: none;
+}
+
+.nav-link {
+    color: #F2F3F5;
+}
+
+.nav-link:active {
+    color:#9457EB;
+}
+
+.nav-link:hover {
+    color:#9457EB;
+}
+
+
+
+.game1di:visited {
+    color:#9457EB;
+}
+
+.game2di:visited {
+    color:#9457EB;
+}
+
+
+.game1di:hover {
+    color:#9457EB;
+}
+
+.game2di:hover{
+    color:#9457EB;
+}
+
+
+.game1di {
+    color:white;
+}
+
+.game2di{
+    color:white;
+}
+
+
+/* Main */
+main {
+    display: flex; /* Устанавливаем flex контейнер */
+    background-color: #313338; /* Цвет фона для примера */
+}
+
+article {
+    flex: 2;
+}
+
+aside {
+    background-color: #2B2D31;
+}
+
+.abouth1 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    color: whitesmoke;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+
+.abouth2 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    color: whitesmoke;
+    margin-top: 165px;
+    margin-bottom: 125px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+
+.abouth3 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    color: whitesmoke;
+    margin-top: 1500px;
+    margin-bottom: 125px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+
+.aboutme_txt {
+    color: whitesmoke;
+    font-size: 18px;
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.part2 {
+    background-color: #2B2D31;
+    height: 100px;
+}
+
+.part3 {
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    color: whitesmoke;
+    font-size: 18px;
+
+}
+
+/* GAME 1*/
+.game1 {
+    margin-top: 50px;
+}
+
+.game1di {
+    margin-top: 20px;
+    margin-left: 550px;
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Наследует цвет текста от родительского элемента */
+    font-size: 24px;
+}
+
+/* GAME 2*/
+.game2 {
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.game2di {
+    margin-top: 20px;
+    margin-left: 600px;
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Наследует цвет текста от родительского элемента */
+    font-size: 24px;
+}
+
+/*part 4*/
+
+.part4 {
+    color: whitesmoke;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 550px;
+}
+
+.end {
+    margin-bottom: 50px;
+}
+
+/*footer 4*/
+footer {
+    background-color: #1E1F22; /* Цвет фона для футера (замените на свой) */
+    color: #fff; /* Цвет текста внутри футера (замените на свой) */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 20px; /* Внутренние отступы для футера (замените на свои) */
+}
+
+.footer-content {
+    display: inline-block; /* Чтобы контент внутри футера выравнивался по центру */
+}
