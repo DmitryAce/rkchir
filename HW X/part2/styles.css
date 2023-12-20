@@ -1,0 +1,39 @@
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-content {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.card-content::before {
+    content: "Карточка 1";
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.card:hover .card-content::before {
+    opacity: 1;
+    transform: translateX(0);
+}

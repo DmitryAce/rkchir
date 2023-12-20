@@ -1,0 +1,20 @@
+#contents {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+#contents a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contents a:hover {
+  text-decoration: underline;
+}
+
+/* Дополнительные стили для иконок внутри ссылок (если есть) */
+#contents a i {
+  margin-right: 5px;
+}

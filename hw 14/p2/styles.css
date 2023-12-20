@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2B2D31; /* Темно-серый фон */
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.main-image {
+  position: relative;
+}
+
+.main-image img {
+  max-width: 400px;
+  height: auto;
+  border: 3px solid #8a2be2; /* Фиолетовая неоновая рамка */
+}

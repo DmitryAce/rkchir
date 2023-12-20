@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag and Drop Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="products">
+      <h2>Товары</h2>
+      <div id="products-list" class="list">
+        <div class="product" draggable="true" data-price="10">
+          <div class="content">
+            <img src="product1.jpg" alt="Товар 1">
+            <h3>Товар 1</h3>
+            <p>Цена: $10</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="20">
+          <div class="content">
+            <img src="product2.jpg" alt="Товар 2">
+            <h3>Товар 2</h3>
+            <p>Цена: $20</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="30">
+          <div class="content">
+            <img src="product3.jpg" alt="Товар 2">
+            <h3>Товар 3</h3>
+            <p>Цена: $30</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="40">
+          <div class="content">
+            <img src="product4.png" alt="Товар 2">
+            <h3>Товар 4</h3>
+            <p>Цена: $40</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="50">
+          <div class="content">
+            <img src="product5.jpg" alt="Товар 2">
+            <h3>Товар 5</h3>
+            <p>Цена: $50</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="60">
+          <div class="content">
+            <img src="product6.jpg" alt="Товар 2">
+            <h3>Товар 6</h3>
+            <p>Цена: $60</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="70">
+          <div class="content">
+            <img src="product7.jpg" alt="Товар 2">
+            <h3>Товар 7</h3>
+            <p>Цена: $70</p>
+          </div>
+        </div>
+        <!-- Другие товары... -->
+      </div>
+    </div>
+    <div class="cart">
+      <h2>Корзина</h2>
+      <div id="cart-list" class="list droppable"></div>
+      <p id="total-price">Итоговая стоимость: 0</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

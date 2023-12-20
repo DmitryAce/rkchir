@@ -1,0 +1,67 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.button1:hover {
+    background-color: #2980b9;
+    color: #eee;
+}
+
+
+.button2::before, .button2::after {
+    content: "";
+    position: absolute;
+    background-color: #2ecc71;
+    width: 0;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.button2::before {
+    left: 0;
+}
+
+.button2::after {
+    right: 0;
+}
+
+.button2:hover::before {
+    width: 50%;
+}
+
+.button2:hover::after {
+    width: 50%;
+}
+
+@keyframes rotateButton {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.button3 {
+    animation: none;
+}
+
+.button3:hover {
+    animation: rotateButton 2s linear infinite;
+}
+
+.button4:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}

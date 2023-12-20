@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.selectable-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.selectable-list li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none; /* Отключение выделения текста */
+}
+
+
+.selectable-list li.selected {
+  background-color: #8a2be2; /* Фиолетовый цвет для выделенного элемента */
+  color: #fff;
+}
+
