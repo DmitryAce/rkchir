@@ -1,0 +1,504 @@
+@media (max-width: 1439px) {
+    .container{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .header{
+        padding: 100px 0;
+    }
+    .middle-header h1{
+        font-size: 120px;
+    }
+    .concept-card:first-of-type{
+        padding-top: 150px;
+        flex-direction: column;
+    }
+    .concept-card{
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+
+    .concept-card:nth-of-type(2) img{
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .concept-card:nth-of-type(3) img{
+        width: 50%;
+    }
+
+    .concept-card:nth-of-type(2) p{
+        margin-top: 0px;
+        max-width: 747px;
+    }
+
+
+    .concept-card:nth-of-type(3) p{
+        margin-left: 0px;
+    }
+    .crown{
+        display: none;
+    }
+
+
+    .audience h2{
+        font-size: 48px
+    }
+    
+    .audience p{
+        max-width: 400px;
+        font-size: 20px;
+    }
+
+    .gold-aim{
+        width: 40%;
+        top: 450px;
+        right: 60px;
+    }
+
+    .black-aim{
+        top: 400px;
+        right: 390px;
+    }
+
+    .wolf-ws{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wolf-ws img{
+        width: 50%;
+        margin-top: 100px;
+    }
+
+    .wolf-ws-info{
+        margin-left: 0;
+    }
+
+    .wolf-ws-info h3{
+        position: absolute;
+        top: 0;
+    }
+
+    .secret-guest{
+        flex-direction: column;
+        margin-left: 0;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .secret-guest h2{
+        margin-top: 85px;
+    }
+
+    .secret-guest img{
+        margin-top: 0;
+    }
+
+    .people{
+        padding-bottom: 60px;
+    }
+
+    .upper-sponsor-meetup{
+        margin-top: 100px;
+    }
+
+    .block-row{
+        flex-direction: row;
+        gap: 190px;
+    }
+
+    .block-row ul{
+        max-height: none;
+    }
+
+    #player{
+        margin: 0 -80px;
+    }
+
+    .album{
+        margin: 0 -80px 105px;
+    }
+
+    .block-vertical-column{
+        overflow-x: scroll;
+        margin: 0 -100PX;
+        padding: 0 100px;
+    }
+
+    .program-header h2{
+        font-size: 60px;
+    }
+
+    .timeline-point p{
+        font-size: 20px;
+    }
+
+    .feedback h2{
+        font-size: 60px;
+    }
+
+    .logos{
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 1023px) {
+    .container{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .big-crown{
+        top: -20px;
+    }
+
+    .upper-header p{
+        font-size: 16px;
+    }
+
+    .upper-header img{
+        width: 60%;
+    }
+
+    .middle-header h1{
+        font-size: 100px;
+    }
+    .middle-header span{
+        font-size: 40px;
+    }
+
+    .concept-card{
+        flex-direction: column;
+    }
+
+    .concept-card:nth-of-type(2){
+        flex-direction: column-reverse;
+    }
+
+    .concept-card+.concept-card{
+        margin-top: 60px;
+    }
+
+    .about-cards{
+        justify-content:space-evenly;
+    }
+
+    .people{
+        padding-top: 120px;
+        padding-bottom: 0;
+    }
+
+    .audience{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .audience p{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .people-info p{
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .gold-aim{
+        width: 35%;
+        top: 180px;
+        right: 20px;
+    }
+
+    .black-aim{
+        top: 300px;
+        right: 100px;
+    }
+
+    .people h2{
+        margin-top: 115px;
+    }
+    .microphone{
+        top: 650px;
+    }
+
+    .wolf-ws img{
+        width: 70%;
+    }
+
+    .secret-guest h2{
+        margin-top: 60px;
+    }
+
+    .upper-sponsor-meetup h2{
+        font-size: 50px;
+    }
+
+    .upper-sponsor-meetup p{
+        font-size: 24px;
+        top: 80px;
+        left: 230px;
+    }
+
+    .blocks-column{
+        margin-top: 30px;
+    }
+    .block-row{
+        gap: 70px;
+    }
+    .heading h3{
+        font-size: 34px;
+    }
+    .block-row li{
+        min-width: none;
+        max-width: 200px;
+    }
+
+    #player{
+        margin: 0 -70px;
+    }
+    .big-bull{
+        top: 865px;
+    }
+    .big-wifi{
+        display: none;
+    }
+    .big-cup{
+        display: none;
+    }
+    .timeline-gradient{
+        right: 68px;
+    }
+    .program-header h2{
+        font-size: 45px;
+    }
+    .feedback h2{
+        font-size: 45px;
+    }
+    .sm-ques{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logos{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .logos img{
+        width: 50%;
+    }
+    .social-media{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .upper-header p{
+        font-size: 14px;
+    }
+
+    .middle-header h1{
+        font-size: 55px;
+    }
+
+    .middle-header span{
+        font-size: 28px;
+    }
+
+    .lower-header p{
+        font-size: 14px;
+    }
+
+    .lower-header img{
+        width: 40%;
+    }
+
+    .big-crown{
+        top: 80px;
+        right: 0px;
+        width: 280%;
+    }
+
+    .concept-card:first-of-type{
+        padding-top: 100px;
+    }
+
+    .concept-card:first-of-type h2{
+        margin-right: 0;
+    }
+    .concept-card h2{
+        font-size: 34px;
+    }
+    .concept-card+.concept-card{
+        margin-top: 20px;
+    }
+
+    .concept-card img{
+        min-width: 90%;
+    }
+
+    .about{
+        padding-top: 60px;
+    }
+    .about h2{
+        font-size: 45px;
+    }
+    .about-cards{
+        margin-top: 50px;
+        justify-content: flex-start;
+    }
+
+    .audience h2{
+        font-size: 40px;
+    }
+    .gold-aim{
+        display: none;
+    }
+    .people-info p{
+        text-align: start;
+    }
+    .people h2{
+        font-size: 45px;
+    }
+
+    .wolf-ws{
+        margin-top: 40px;
+    }
+
+    .wolf-ws img{
+        margin-top: 120px;
+        width: 100%;
+    }
+    .wolf-ws-info h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .microphone{
+        top: 850px;
+    }
+
+    .upper-sponsor-meetup{
+        margin-top: 70px;
+    }
+    .upper-sponsor-meetup span{
+        font-size: 30px;
+    }
+    .upper-sponsor-meetup h2{
+        font-size: 45px;
+    }
+    .upper-sponsor-meetup p{
+        left: 190px;
+        font-size: 16px;
+    }
+    .block-row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .heading h3{
+        margin-right: 0;
+    }
+    .block-row ul{
+        max-width: 300px;
+    }
+    .block-row li{
+        min-width: 0;
+        max-width: 300px;
+    }
+    .charger{
+        top: 3240px;
+        right: -100px;
+    }
+    .small-wifi{
+        top: 2600px;
+    }
+    .small-cup{
+        top: 2000px;
+    }
+    .big-bull{
+        top: 1500px;
+    }
+    .small-bull{
+        top: 1000px;
+    }
+    .small-diam{
+        display: none;
+    }
+    .middle-diam{
+        top: 500px;
+    }
+    .upper-events h2{
+        font-size: 30px;
+    }
+
+    .upper-events{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .video-events h2{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+
+    #player{
+        margin: 0 -30px;
+    }
+
+    .album{
+        margin: 0 -30px;
+    }
+
+    .program-header h2{
+        font-size: 35px;
+        margin-top: 90px;
+    }
+    .btn{
+        right: 30px;
+        top: 60px;
+    }
+    .timeline-gradient{
+        right: 30px;
+    }
+
+    .feedback{
+        margin: 60px -28px;
+    }
+
+    .feedback h2{
+        font-size: 28px;
+    }
+    .feedback p{
+        text-align: center;
+    }
+    .form-info input,select{
+        width: 300px;
+    }
+    .question-header h2{
+        margin-top: 0;
+        font-size: 45px;
+    }
+    .logos{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .logos img{
+        width: 100%;
+    }
+    .sigma{
+        justify-content: space-around;
+    }
+}

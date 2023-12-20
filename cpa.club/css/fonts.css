@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'TT Travels Next';
+    font-weight: 800;
+    font-style: normal;
+    src: url("../fonts/TT Travels Next Trial 1-000/TT Travels Next Trial ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'TT Travels Next';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/TT Travels Next Trial 1-000/TT Travels Next Trial Black.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: italic;
+    src: url("../fonts/Montserrat/Montserrat-BoldItalic.ttf");
+}
